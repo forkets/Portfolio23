@@ -1,0 +1,25 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+header {
+    @include background-stuff;
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        :hover {
+            filter: invert(1);
+        }
+        
+        a {
+            background-color: $primary-color;
+            border: 2px solid $border-color;
+            border-radius: 4px;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+}

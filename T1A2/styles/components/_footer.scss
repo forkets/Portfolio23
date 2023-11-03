@@ -1,0 +1,28 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+footer {
+    @include background-stuff;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 4rem;
+    margin-top: auto;
+
+
+    img {
+        max-height: 3rem;
+     }
+}
+
+@media screen and (min-width: $medium) {
+    footer {
+            width: 100vw;
+            margin-left: auto;
+            margin-right: auto;
+    }
+}

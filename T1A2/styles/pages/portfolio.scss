@@ -1,0 +1,42 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "../components/header";
+@import "../components/footer";
+@import "../../style.css";
+
+
+.portfolio-intro {
+    border: 2px solid $border-color;
+    padding: 10px;
+
+    @media screen and (min-width: 1780px) {
+        height: 60vh;
+    }
+    .parent-cards {
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 50px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .cards {
+            @include background-stuff;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+                .name {
+                    margin-top: 0;
+                }
+            img {
+                width: 50%;
+            }
+        }
+    }
+}

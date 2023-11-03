@@ -1,0 +1,10 @@
+@import "../defaults/colors";
+
+@mixin background-stuff() {
+    background-color: $secondary-color;
+    border: 2px solid $border-color;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+}
