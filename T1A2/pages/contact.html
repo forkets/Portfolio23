@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/pages/contact.css">
 </head>
 <body>
     <header>
@@ -21,31 +21,40 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </header>
+    <main>
+        <h2>Contact Us</h2>
+            <form>
 
-    <section class="main">
-        <form id="form">
-            <div>
-                <label>First:
-                    <input id="first-input" placeholder="First Name" />
-            </div>
-            <div>
-                <label>Last:
-                    <input id="last-input" placeholder="Last Name" />
-            </div>
-            <div>
-                <label>Email:
-                    <input id="email-input" placeholder="Email" />
-            </div>
-            <div>
-                <label>Message:
-                <textarea id="message-input" name="message" placeholder="How can I help you?"></textarea>
-            </div>
+                <div class="form-elements">
+                    <label>Name:</label>
+                    <input class="form-input">
+                </div>
 
-            <div>
-            <input type="submit" value="Submit">
-            </div>
-        </form>
-    </section>
+                <div class="form-elements">
+                    <label>Email:</label>
+                    <input class="form-input">
+                </div>
+
+                <div class="form-elements">
+                    <label>Subject:</label>
+                    <input class="form-input">
+                </div>
+
+                <div class="form-elements">
+                    <label>Message:</label>
+                    <textarea
+                        rows="3"
+                        class="form-input"
+                        id="form-textarea"
+                    ></textarea>
+                </div>
+
+                <div class="btn-div">
+                    <button id="submit">Submit</button>
+                </div>
+
+            </form>
+    </main>
 
     <footer>
         <a href="https://github.com/forkets">

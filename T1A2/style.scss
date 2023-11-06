@@ -3,7 +3,7 @@
 @import "./styles/defaults/breakpoints";
 @import "./styles/components/header";
 @import "./styles/components/footer";
-@import "./styles/pages/contact";
+
 
 
 body {
@@ -18,7 +18,7 @@ body {
     }
 }
 
-.main {
+.home {
     height: 90vh;
     border: 2px solid $border-color;
     background-color: $primary-color;   
@@ -28,8 +28,10 @@ body {
         padding-top: 10px;
         padding-right: 10px;
         object-fit: scale-down;
-        float: left;
-    
+        
+        @media screen and (min-width: 685px) {
+            float: left;
+        }
     }
 
     .content-wrap {

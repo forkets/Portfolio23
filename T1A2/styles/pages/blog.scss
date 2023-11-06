@@ -1,0 +1,11 @@
+@import "../../style.css";
+
+.blog-parent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
