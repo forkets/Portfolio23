@@ -2,13 +2,13 @@
 
 .blog-parent {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    text-align: center;
+    justify-content: space-around;
     padding-bottom: 25px;
 
     .posts {
-        width: 50vw;
+        width: 90vw;
     }
 
     ul {
@@ -17,7 +17,7 @@
     }
 
     img {
-        width: 100%;
+        width: 50%;
     }
 
 
